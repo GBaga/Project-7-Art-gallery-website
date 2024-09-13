@@ -1,0 +1,121 @@
+@import url(./color.css);
+@import url(./fonts.css);
+
+main>div {
+    margin: auto;
+    display: grid;
+    background: #F2F2F2;
+}
+
+.button {
+    position: relative;
+    margin: 0;
+    top: -552px;
+    width: 264px;
+    height: 72px;
+}
+
+.button .part-1 {
+    width: 208px;
+}
+
+.location-map {
+    width: 375px;
+    height: 550px;
+    margin: auto;
+}
+
+.black-container {
+    margin: auto;
+    width: 375px;
+    height: 493px;
+    background-color: var(--black);
+    padding: 48px 16px 56px;
+    box-sizing: border-box;
+}
+
+.black-container h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.grid-text {
+    display: grid;
+    box-sizing: border-box;
+    row-gap: 20px;
+}
+
+.black-container h3 {
+    font-family: Big Shoulders Display;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 32px;
+    color: var(--brown);
+}
+
+.black-container p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer {
+    background-color: var(--brown);
+}
+
+footer p {
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.icon-container>img {
+    filter: invert(100%);
+}
+
+.icon-container>img:hover {
+    filter: invert(0%);
+}
+
+
+/* laptops */
+
+@media screen and (min-width: 768px) {
+    main>div {
+        margin: auto;
+        display: grid;
+        background: #F2F2F2;
+        position: relative;
+    }
+
+    .button {
+        top: 0;
+        left: calc((-768px + 39px));
+    }
+
+    .location-map {
+        width: 768px;
+        height: 600px;
+    }
+
+    .black-container {
+        width: 768px;
+        height: 436px;
+        padding: 88px 40px 88px 39px;
+        gap: 68px;
+    }
+
+    .black-container h2 {
+        font-size: 5.5rem;
+        line-height: 50px;
+        margin-bottom: 160px;
+        width: 223px;
+    }
+}
