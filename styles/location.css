@@ -7,12 +7,38 @@ main>div {
     background: #F2F2F2;
 }
 
+/* tablets */
+@media screen and (min-width: 768px) {
+    main>div {
+        margin: auto;
+        display: grid;
+        background: #F2F2F2;
+        position: relative;
+    }
+}
+
 .button {
     position: relative;
     margin: 0;
     top: -552px;
     width: 264px;
     height: 72px;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .button {
+        top: 0;
+        left: calc((-768px + 39px));
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .button {
+        top: 0;
+        left: calc((-1440px + 156px));
+    }
 }
 
 .button .part-1 {
@@ -25,6 +51,21 @@ main>div {
     margin: auto;
 }
 
+/* tablets */
+@media screen and (min-width: 768px) {
+    .location-map {
+        width: 768px;
+        height: 600px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .location-map {
+        width: 1440px;
+    }
+}
+
 .black-container {
     margin: auto;
     width: 375px;
@@ -32,6 +73,26 @@ main>div {
     background-color: var(--black);
     padding: 48px 16px 56px;
     box-sizing: border-box;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .black-container {
+        width: 768px;
+        height: 436px;
+        padding: 88px 40px 88px 39px;
+        gap: 68px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .black-container {
+        width: 1440px;
+        height: 548px;
+        padding: 104px 165px 128px 165px;
+        gap: 220px;
+    }
 }
 
 .black-container h2 {
@@ -43,10 +104,37 @@ main>div {
     margin-bottom: 48px;
 }
 
+/* tablets */
+@media screen and (min-width: 768px) {
+    .black-container h2 {
+        font-size: 5.5rem;
+        line-height: 50px;
+        margin-bottom: 160px;
+        width: 223px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .black-container h2 {
+        font-size: 7rem;
+        line-height: 70px;
+        margin-bottom: 176px;
+        width: 350px;
+    }
+}
+
 .grid-text {
     display: grid;
     box-sizing: border-box;
     row-gap: 20px;
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .grid-text {
+        row-gap: 24px;
+    }
 }
 
 .black-container h3 {
@@ -57,12 +145,30 @@ main>div {
     color: var(--brown);
 }
 
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .black-container h3 {
+        font-size: 3.6rem;
+        line-height: 36px;
+        width: 350px;
+    }
+}
+
 .black-container p {
     font-family: 'Outfit', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 28px;
     color: rgba(255, 255, 255, 1);
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    .black-container p {
+        font-size: 2.2rem;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
 }
 
 footer {
@@ -76,46 +182,18 @@ footer p {
     line-height: 26px;
 }
 
+/* desktop */
+@media screen and (min-width: 1440px) {
+    footer p {
+        font-size: 1.8rem;
+        line-height: 28px;
+    }
+}
+
 .icon-container>img {
     filter: invert(100%);
 }
 
 .icon-container>img:hover {
     filter: invert(0%);
-}
-
-
-/* laptops */
-
-@media screen and (min-width: 768px) {
-    main>div {
-        margin: auto;
-        display: grid;
-        background: #F2F2F2;
-        position: relative;
-    }
-
-    .button {
-        top: 0;
-        left: calc((-768px + 39px));
-    }
-
-    .location-map {
-        width: 768px;
-        height: 600px;
-    }
-
-    .black-container {
-        width: 768px;
-        height: 436px;
-        padding: 88px 40px 88px 39px;
-        gap: 68px;
-    }
-
-    .black-container h2 {
-        font-size: 5.5rem;
-        line-height: 50px;
-        margin-bottom: 160px;
-        width: 223px;
-    }
 }
