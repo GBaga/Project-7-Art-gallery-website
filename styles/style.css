@@ -287,10 +287,6 @@ a div img {
     .item2 {
         order: 1;
     }
-
-    .br-mobile {
-        display: none;
-    }
 }
 
 /* desktop */
@@ -298,6 +294,10 @@ a div img {
     .grid-container-1 {
         grid-template-columns: 445px auto;
         gap: 30px;
+    }
+
+    .br-mobile {
+        display: none;
     }
 }
 
@@ -338,7 +338,7 @@ a div img {
         height: 400px;
         display: grid;
         gap: 24px;
-        padding: 26px 50px 65px 0;
+        padding: 36px 50px 65px 0;
     }
 }
 
@@ -349,6 +349,17 @@ a div img {
         display: grid;
         gap: 32px;
         padding: 60px 95px 60px 0;
+    }
+}
+
+.grid-item-white-box {
+    margin-top: 25px;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .grid-item-white-box {
+        margin-top: 0;
     }
 }
 
